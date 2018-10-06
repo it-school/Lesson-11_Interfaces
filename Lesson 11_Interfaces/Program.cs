@@ -10,6 +10,12 @@ namespace Lesson_11_Interfaces
     {
         static void Main(string[] args)
         {
+            Point point = new Point();
+            Line line = new Line();
+
+            point.draw();
+            line.draw();
+            
         }
     }
 }
