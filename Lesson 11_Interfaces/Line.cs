@@ -8,10 +8,11 @@ namespace Lesson_11_Interfaces
 {
     class Line : IFigure, IStyle
     {
-        int x1;
-        int y1;
-        int x2;
-        int y2;
+        private int x1;
+        private int y1;
+        private int x2;
+        private int y2;
+        private string lineName;
         ConsoleColor color;
         uint thickness;
 
@@ -22,11 +23,12 @@ namespace Lesson_11_Interfaces
 
         public ConsoleColor Color { get => color; set => color = value; }
         public uint Thickness { get => thickness; set => thickness = value; }
+        public string Title { get => lineName; set => lineName = value; }
 
         public void draw()
         {
-// Здесь должно быть рисование линии с координатами (Х, У) - (X2, Y2),
-// цветом color и толщиной линии thickness
+            // Здесь должно быть рисование линии с координатами (Х, У) - (X2, Y2),
+            // цветом color и толщиной линии thickness
         }
     }
 }

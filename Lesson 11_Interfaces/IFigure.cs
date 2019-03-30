@@ -10,6 +10,7 @@ namespace Lesson_11_Interfaces
     {
         int X { get; set; }
         int Y { get; set; }
+        string Title { get; set; }
 
         void draw();
 

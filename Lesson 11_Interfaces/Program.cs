@@ -10,12 +10,11 @@ namespace Lesson_11_Interfaces
     {
         static void Main(string[] args)
         {
-            Point point = new Point();
+            Point point = new Point(10, 4, ConsoleColor.Cyan, 1, "P1");
             Line line = new Line();
 
             point.draw();
-            line.draw();
-            
+            line.draw();            
         }
     }
 }
