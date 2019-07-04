@@ -12,6 +12,5 @@ namespace Lesson_11_Interfaces
         int Y { get; set; }
 
         void draw();
-
     }
 }

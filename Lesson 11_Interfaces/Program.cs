@@ -11,11 +11,15 @@ namespace Lesson_11_Interfaces
         static void Main(string[] args)
         {
             Point point = new Point();
+            point.Color = ConsoleColor.Blue;
+
             Line line = new Line();
+            line.Color = ConsoleColor.Red;
 
             point.draw();
             line.draw();
-            
+
+            Console.WriteLine();
         }
     }
 }
