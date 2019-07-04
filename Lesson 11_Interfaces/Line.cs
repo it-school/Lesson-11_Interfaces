@@ -26,7 +26,10 @@ namespace Lesson_11_Interfaces
         public void draw()
         {
             Console.ForegroundColor = color;
+            Console.SetCursorPosition(0, 0);
             Console.WriteLine("рисование линии с координатами (Х, У) - (X2, Y2), цветом color и толщиной линии thickness");
+            Console.SetCursorPosition(X, Y);
+            Console.Write("Line");
             Console.ResetColor();
         }
     }

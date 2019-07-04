@@ -12,11 +12,19 @@ namespace Lesson_11_Interfaces
         {
             Point point = new Point();
             point.Color = ConsoleColor.Blue;
+            point.X = 5;
+            point.Y = 8;
+            point.draw();
+
+            Console.ReadLine();
+
 
             Line line = new Line();
             line.Color = ConsoleColor.Red;
-
-            point.draw();
+            line.X = 10;
+            line.Y = 20;
+            line.X2 = 10;
+            line.Y2 = 20;
             line.draw();
 
             Console.WriteLine();
