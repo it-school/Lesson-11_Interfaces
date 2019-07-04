@@ -18,7 +18,6 @@ namespace Lesson_11_Interfaces
 
             Console.ReadLine();
 
-
             Line line = new Line();
             line.Color = ConsoleColor.Red;
             line.X = 10;
