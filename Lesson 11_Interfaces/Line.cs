@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson_11_Interfaces
 {
@@ -22,15 +18,18 @@ namespace Lesson_11_Interfaces
 
         public ConsoleColor Color { get => color; set => color = value; }
         public uint Thickness { get => thickness; set => thickness = value; }
+        public string Title { get; set; }
 
         public void draw()
         {
             Console.ForegroundColor = color;
-            Console.SetCursorPosition(0, 0);
+            Console.SetCursorPosition(20, 20);
             Console.WriteLine("рисование линии с координатами (Х, У) - (X2, Y2), цветом color и толщиной линии thickness");
             Console.SetCursorPosition(X, Y);
             Console.Write("Line");
             Console.ResetColor();
+
+            // здесь должно быть реальное рисование линии по алгоритму Брезенхейма
         }
     }
 }

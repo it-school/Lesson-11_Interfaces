@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson_11_Interfaces
 {
@@ -17,6 +13,7 @@ namespace Lesson_11_Interfaces
         public int Y { get => y; set => y = value; }
         public ConsoleColor Color { get => color; set => color = value; }
         public uint Thickness { get => thickness; set => thickness = value; }
+        public string Title { get; set; }
 
         public void draw()
         {

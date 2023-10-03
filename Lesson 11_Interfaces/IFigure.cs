@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lesson_11_Interfaces
 {
@@ -13,5 +9,10 @@ namespace Lesson_11_Interfaces
         string Title { get; set; }
 
         void draw();
+
+        void DefaultMethod()
+        {
+            Console.WriteLine("This is default method implementation in interface");
+        }
     }
 }
