@@ -4,31 +4,36 @@ namespace Lesson_11_Interfaces
 {
     class Line : IFigure, IStyle
     {
-        int x1;
-        int y1;
-        int x2;
-        int y2;
-        ConsoleColor color;
-        uint thickness;
+        int _x1;
+        int _y1;
+        int _x2;
+        int _y2;
+        ConsoleColor _color;
+        uint _thickness;
 
-        public int X { get => x1; set => x1 = value; }
-        public int Y { get => y1; set => y1 = value; }
-        public int X2 { get => x2; set => x2 = value; }
-        public int Y2 { get => y2; set => y2 = value; }
+        public int X { get => _x1; set => _x1 = value; }
+        public int Y { get => _y1; set => _y1 = value; }
+        public int X2 { get => _x2; set => _x2 = value; }
+        public int Y2 { get => _y2; set => _y2 = value; }
 
-        public ConsoleColor Color { get => color; set => color = value; }
-        public uint Thickness { get => thickness; set => thickness = value; }
+        public ConsoleColor Color { get => _color; set => _color = value; }
+        public uint Thickness { get => _thickness; set => _thickness = value; }
         public string Title { get; set; }
 
-        public void draw()
+        public void DefaultMethod()
         {
-            Console.ForegroundColor = color;
-            Console.SetCursorPosition(20, 20);
-            Console.WriteLine("рисование линии с координатами (Х, У) - (X2, Y2), цветом color и толщиной линии thickness");
+            throw new NotImplementedException();
+        }
+
+        public void Draw()
+        {
+            Console.ForegroundColor = _color;
+            Console.SetCursorPosition(15, 20);
+            Console.WriteLine($"- рисование линии с координатами ({X}, {Y}) - ({X2}, {Y2}), цветом color и толщиной линии thickness");
             Console.SetCursorPosition(X, Y);
             Console.Write("Line");
             Console.ResetColor();
-
+            Console.SetCursorPosition(5, 25);
             // здесь должно быть реальное рисование линии по алгоритму Брезенхейма
         }
     }

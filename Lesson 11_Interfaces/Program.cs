@@ -4,23 +4,27 @@ namespace Lesson_11_Interfaces
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Point point = new Point();
-            point.Color = ConsoleColor.Blue;
-            point.X = 5;
-            point.Y = 8;
-            point.draw();
+            Point point = new Point
+            {
+                Color = ConsoleColor.Blue,
+                X = 5,
+                Y = 8
+            };
+            point.Draw();
 
             Console.ReadLine();
 
-            Line line = new Line();
-            line.Color = ConsoleColor.Red;
-            line.X = 10;
-            line.Y = 20;
-            line.X2 = 10;
-            line.Y2 = 20;
-            line.draw();
+            Line line = new Line
+            {
+                Color = ConsoleColor.Red,
+                X = 10,
+                Y = 20,
+                X2 = 30,
+                Y2 = 25
+            };
+            line.Draw();
 
             Console.WriteLine();
         }
